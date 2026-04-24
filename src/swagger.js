@@ -9,6 +9,7 @@ const options = {
       description: 'Microservicios para gestión de estudiantes y notas',
     },
     servers: [
+      { url: 'https://backend-notas-jggh.onrender.com', description: 'Producción' },
       { url: 'http://localhost:3000', description: 'Local' },
     ],
   },
