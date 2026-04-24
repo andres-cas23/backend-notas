@@ -5,7 +5,7 @@ const swaggerSpec = require('./swagger');
 
 const app = express();
 
-app.options('*', cors());
+app.options('/(.*)', cors());
 app.use(cors({
   origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
